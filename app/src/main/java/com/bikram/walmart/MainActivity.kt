@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, ShoppingCategory::class.java)
                     intent.putExtra("username", user.username)
                     startActivity(intent)
+                }else{
+                    showToast("Incorrect username or password")
                 }
             }
         }
